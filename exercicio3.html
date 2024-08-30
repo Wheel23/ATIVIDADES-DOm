@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Tarefas!</h1>
+    <title>Lista de Tarefas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        margin: 0;
+      }
+      .container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+      input[type="text"] {
+        width: calc(100% - 82px);
+        padding: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+      }
+      .concluida {
+        text-decoration: line-through;
+        color: #aaa;
+      }
+      .btn-excluir {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        margin-left: 10px;
+      }
+      .btn-concluir {
+        background-color: #2ecc71;
+        color: #fff;
+        border: none;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Lista de Tarefas</h2>
+      <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
+      <button id="adicionar">Adicionar</button>
+      <ul id="listaTarefas"></ul>
+    </div>
+    <script src="jaja.js"></script>
+    <a href="exercicio4.html">Exercicío 4 aqui!</a>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Imagens</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .galeria img {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.1);
+    }
+    .imagem-destaque {
+      margin: 20px;
+      width: 500px;
+      height: auto;
+      border: 2px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeria de Imagens</h1>
+  <div class="imagem-destaque">
+    <img id="imagemPrincipal" src="" alt="Clique em uma miniatura">
+  </div>
+  <div class="galeria">
+    <img src="PAO-removebg-preview.png" alt="Imagem 1">
+    <img src="robin.jpg" alt="Imagem 2">
+    <img src="imagem1.png" alt="Imagem 3">
+   
+  </div>
+
+  <script>
+
+    const imagemPrincipal = document.getElementById('imagemPrincipal');
+    const miniaturas = document.querySelectorAll('.galeria img');
+
+  
+    miniaturas.forEach(miniatura => {
+      miniatura.addEventListener('click', () => {
+      
+        imagemPrincipal.src = miniatura.src;
+        imagemPrincipal.alt = miniatura.alt;
+      });
+    });
+  </script>
+  <a href="exercicio5.html">Exercicío 5 aqui</a>
+</body>
+</html>

@@ -6,10 +6,8 @@ const mensagem = document.getElementById("mensagem");
 const palavraCorreta = "banana";
 
     botao.addEventListener('click', function() {
- // Obtém o valor digitado no input
- const palavraDigitada = input.value.trim().toLowerCase(); // .trim() remove espaços extras
-
- // Verifica se a palavra digitada é igual à correta
+ 
+ const palavraDigitada = input.value.trim().toLowerCase(); 
  if (palavraDigitada === palavraCorreta) {
    mensagem.textContent = "Palavra correta!";
    mensagem.style.color = "green";
